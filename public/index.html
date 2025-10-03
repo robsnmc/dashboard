@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>Clima</title>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"/></head>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-date-fns"></script>
+  <body>
+    <img class="decoracao" src="img/decoracao.png" alt="">
+    <img class="decoracao2" src="img/decoracao.png" alt="">
+    <div class="cabecalho">
+      <div class="form">
+        <i class="icon-input fa-solid fa-magnifying-glass"></i>
+        <input type="text" id="cidade" placeholder="Digite uma cidade para verificação" />
+        <i class="icon-button fa-solid fa-location-dot"></i>
+        <button id="botao-busca">Buscar</button>
+      </div>
+    </div>
+      <div id="container-cronometro">
+        <p>Próxima consulta: <br/> <strong id="cronometro">30</strong></p>
+        <img class="relogio-cronometro" src="img/relogio.png">
+      </div>
+    </div>
+    <div class="info-maquina">
+      <h3>Informações da Máquina</h3><br>
+      <p>Modelo: PowerBalt.</p>
+      <p>Situação: Ativa.</p>
+      <p>Tempo de funcionamento: 30hrs.</p>
+    </div>
+    <div class="maquina">
+      <img src="img/maquina.png">
+    </div>
+    <div class="resultado-atual">
+      <div class="resultadoAtual-title">
+        <img class="desempenhoImg" src="img/desempenho.jpeg">
+        <h3>Leitura Atual</h3>
+      </div>
+      <div class="resultado-atual-info"></div>
+    </div>
+    </div>
+    <div class="resultado-anterior">
+      <div class="resultado-title">
+        <img class="desempenhoImg" src="img/pesquisa.png">
+        <h3>Leitura Anterior</h3>
+      </div>
+      <div class="resultado-anterior-info"></div>
+    </div>
+    <div class="titulo-grafico">
+      <img src="img/variacao.jpeg">
+      <h3>Variação da temperatura ambiente</h3>
+    </div>
+    <div class="graficoD">
+      <canvas id="grafico"></canvas>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
